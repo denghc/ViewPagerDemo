@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <com.example.myviewpagertest.widget.ViewPager
+        android:id="@+id/myviewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+     </com.example.myviewpagertest.widget.ViewPager>
+     
+    
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/share_buttom_back"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <com.example.myviewpagertest.widget.PicBar
+            android:id="@+id/picbar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/picbar_height"
+            android:layout_centerInParent="true"
+            android:background="@null" >
+        </com.example.myviewpagertest.widget.PicBar>
+    </RelativeLayout>
+     
+</RelativeLayout>
